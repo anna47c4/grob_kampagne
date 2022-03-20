@@ -1,1 +1,42 @@
+/* styling af navigation */
 
+header {
+  display: flex;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 50px;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: rama-gothic-m, sans-serif;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  color: #f7f94e;
+}
+
+/* styling af billeder  */
+
+img {
+  max-width: 100%;
+}
+
+/* styling af fonte  */
+
+h2 {
+  font-family: rama-gothic-m, sans-serif;
+  font-size: 2rem;
+}
+
+p {
+  font-family: rama-gothic-m, sans-serif;
+}
