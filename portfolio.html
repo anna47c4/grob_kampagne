@@ -1,10 +1,57 @@
 <!DOCTYPE html>
 <html lang="da">
   <head>
+    <link rel="icon" type="image/x-icon" href="billeder/favicon.png" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://use.typekit.net/umy6lon.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/ibw6eyb.css" />
+    <style>
+      body {
+        background-color: black;
+      }
+
+      .somebilleder {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-gap: 10px;
+        justify-content: center;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      h1 {
+        font-family: rama-gothic-m, sans-serif;
+        font-size: 3rem;
+        color: white;
+        display: flex;
+        justify-content: center;
+      }
+
+      h2 {
+        font-family: rama-gothic-m, sans-serif;
+        font-size: 1.5rem;
+        color: white;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <h1>Portfolio</h1>
+      <h2>Kampangevideo</h2>
+      <img src="billeder/placeholdervideo.png" alt="" />
+      <h2>Video til sociale medier</h2>
+      <img src="billeder/placeholdervideo.png" alt="" />
+      <h2>Fotos til sociale medier</h2>
+      <div class="somebilleder">
+        <img src="billeder/some1.png" alt="" />
+        <img src="billeder/some2.png" alt="" />
+        <img src="billeder/some3.png" alt="" />
+      </div>
+    </main>
+  </body>
 </html>
