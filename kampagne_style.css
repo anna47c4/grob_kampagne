@@ -36,12 +36,31 @@ img {
   max-width: 100%;
 }
 
+.imgsection2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
 /* styling af fonte  */
 
 h2 {
   font-family: rama-gothic-m, sans-serif;
   font-size: 2rem;
   color: white;
+}
+
+h3 {
+  font-family: rama-gothic-m, sans-serif;
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+h3:hover {
+  color: #f7f94e;
 }
 
 p {
@@ -53,7 +72,6 @@ p {
 footer {
   margin: 0;
   padding: 30px 60px 10px 60px;
-  background-color: black;
   gap: 50px;
   line-height: 1.5;
   justify-content: space-between;
