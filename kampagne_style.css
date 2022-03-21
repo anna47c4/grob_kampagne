@@ -49,9 +49,54 @@ p {
   color: white;
 }
 
+/* ---------- Footer :) ---------- */
 footer {
+  margin: 0;
+  padding: 30px 60px 10px 60px;
+  background-color: black;
+  gap: 50px;
+  line-height: 1.5;
+  justify-content: space-between;
+  grid-area: 1/1;
 }
 
+address {
+  font-style: normal;
+  color: white;
+  margin-bottom: 30px;
+}
+
+footer a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+footer p {
+  color: white;
+  margin: 0;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+#flinks {
+  margin-bottom: 30px;
+}
 #fsome {
-  width: 10%;
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+}
+#flinks a {
+  max-width: 9%;
+}
+
+hr {
+  color: white;
+}
+
+footer img {
+  width: 20px;
+  height: 20px;
 }
