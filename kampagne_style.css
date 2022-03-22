@@ -1,10 +1,12 @@
 /* styling af main */
 
 main {
-  max-width: 1200px;
-  margin: 15px;
-  padding: 15px;
-  margin: 0 auto;
+  max-width: 1800px;
+}
+
+#first_section {
+  display: flex;
+  justify-content: center;
 }
 
 /* styling af navigation */
@@ -101,13 +103,13 @@ h2 {
 h3 {
   font-family: rama-gothic-m, sans-serif;
   font-size: 2rem;
-  color: white;
+  color: #f7f94e;
   display: flex;
   justify-content: center;
 }
 
 h3:hover {
-  color: #f7f94e;
+  color: white;
 }
 
 h4 {
@@ -121,17 +123,63 @@ h4 {
 p {
   font-family: nimbus-sans, sans-serif;
   color: white;
-  max-width: 50ch;
+  max-width: 40ch;
   display: grid;
   justify-content: left;
 }
 
+/* second_section på tablet  */
+
+@media (min-width: 768px) {
+  #second_section {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    padding: 50px;
+  }
+
+  .col1 {
+    padding-top: 32px;
+  }
+}
+
 /* second_section på computer  */
 
-@media (min-width: 599px) {
+@media (min-width: 1024px) {
   #second_section {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding: 70px;
+  }
+
+  .col {
+    margin-left: 80px;
+    padding-left: 80px;
+  }
+
+  .col1 {
+    margin-right: 42px;
+    padding-right: 42px;
+    padding-top: 27px;
+  }
+}
+
+/* fourth_section på tablet  */
+
+@media (min-width: 768px) {
+  #fourth_section {
+    padding: 50px;
+  }
+}
+
+/* fourth_section på computer */
+@media (min-width: 1024px) {
+  #fourth_section {
+    padding: 70px;
+  }
+
+  .puzzle {
+    margin-left: 80px;
+    padding-left: 80px;
   }
 }
 
