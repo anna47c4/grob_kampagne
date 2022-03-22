@@ -4,6 +4,8 @@ main {
   max-width: 1200px;
   margin: 15px;
   padding: 15px;
+  /* text-align: center; */
+  margin: 0 auto;
 }
 
 /* styling af navigation */
@@ -93,6 +95,8 @@ h2 {
   font-family: rama-gothic-m, sans-serif;
   font-size: 2rem;
   color: white;
+  display: grid;
+  justify-content: left;
 }
 
 h3 {
@@ -111,6 +115,8 @@ p {
   font-family: nimbus-sans, sans-serif;
   color: white;
   max-width: 50ch;
+  display: grid;
+  justify-content: left;
 }
 
 /* second_section på computer  */
