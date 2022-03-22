@@ -206,19 +206,33 @@ p {
 
 @media (min-width: 768px) {
   #fourth_section {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
     padding: 50px;
+  }
+
+  .col3 {
+    padding-top: 32px;
   }
 }
 
 /* fourth_section på computer */
 @media (min-width: 1024px) {
   #fourth_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 70px;
   }
 
-  .puzzle {
+  .col2 {
     margin-left: 80px;
     padding-left: 80px;
+  }
+
+  .col3 {
+    margin-right: 42px;
+    padding-right: 42px;
+    padding-top: 70px;
   }
 }
 
