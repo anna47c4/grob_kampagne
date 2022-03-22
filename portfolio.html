@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="https://use.typekit.net/umy6lon.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ibw6eyb.css" />
     <style>
@@ -13,16 +14,26 @@
         background-color: black;
       }
 
-      .somebilleder {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-        grid-gap: 10px;
-        justify-content: center;
+      #first_section {
+        margin: 10px;
+        padding: 10px;
       }
 
-      img {
-        max-width: 100%;
+      @media (min-width: 768px) {
+        #first_section {
+          margin: 20px;
+          padding: 20px;
+        }
       }
+
+      @media (min-width: 1024px) {
+        #first_section {
+          margin: 30px;
+          padding: 30px;
+        }
+      }
+
+      /* styling af fonte */
 
       h1 {
         font-family: rama-gothic-m, sans-serif;
@@ -45,43 +56,67 @@
         display: flex;
         justify-content: center;
       }
+
+      /* styling af billeder  */
+
+      img {
+        max-width: 100%;
+      }
+
+      .somebilleder {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-gap: 10px;
+        justify-content: center;
+      }
+
+      /* styling af video */
+
+      iframe {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 16 / 9;
+      }
     </style>
   </head>
   <body>
     <main>
-      <h1>Portfolio</h1>
-      <h2>Kampangevideo</h2>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/-o2UibunXEY"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <h2>Video til sociale medier</h2>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/5u7NZMOdGys"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <h2>Fotos til sociale medier</h2>
-      <div class="somebilleder">
-        <img src="billeder/grob1.png" alt="" />
-        <img src="billeder/grob2.png" alt="" />
-        <img src="billeder/grob3.png" alt="" />
-        <img src="billeder/grob4.png" alt="" />
-        <img src="billeder/grob5.png" alt="" />
-        <img src="billeder/grob6.png" alt="" />
-        <img src="billeder/grob7.png" alt="" />
-        <img src="billeder/grob8.png" alt="" />
-        <img src="billeder/grob9.png" alt="" />
-      </div>
+      <section id="first_section">
+        <h1>Portfolio</h1>
+        <h2>Kampangevideo</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/-o2UibunXEY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <h2>Video til sociale medier</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/5u7NZMOdGys"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <h2>Fotos til sociale medier</h2>
+        <div class="somebilleder">
+          <img src="billeder/grob1.png" alt="somebillede1" />
+          <img src="billeder/grob2.png" alt="somebillede2" />
+          <img src="billeder/grob3.png" alt="somebillede3" />
+          <img src="billeder/grob4.png" alt="somebillede4" />
+          <img src="billeder/grob5.png" alt="somebillede5" />
+          <img src="billeder/grob6.png" alt="somebillede6" />
+          <img src="billeder/grob7.png" alt="somebillede7" />
+          <img src="billeder/grob8.png" alt="somebillede8" />
+          <img src="billeder/grob9.png" alt="somebillede9" />
+        </div>
+      </section>
       <h3>Lavet af gruppe 9</h3>
       <h3>
         Anna Maria Lester, Asta Marie Kristensen, Karina Jespersen og Kristina

@@ -90,6 +90,15 @@ img {
   width: 70%;
 }
 
+/* styling af video */
+
+iframe {
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 16 / 9;
+}
+
 /* styling af fonte  */
 
 h2 {
@@ -128,6 +137,20 @@ p {
   justify-content: left;
 }
 
+/* margin og padding mobil  */
+
+#first_section,
+#second_section,
+#third_section,
+#fourth_section {
+  padding: 10px;
+  margin: 10px;
+}
+
+.col1 {
+  padding-top: 10px;
+}
+
 /* second_section på tablet  */
 
 @media (min-width: 768px) {
@@ -160,6 +183,22 @@ p {
     margin-right: 42px;
     padding-right: 42px;
     padding-top: 27px;
+  }
+}
+
+/* third_section på tablet  */
+
+@media (min-width: 768px) {
+  #third_section {
+    padding: 50px;
+  }
+}
+
+/* third_section på computer  */
+
+@media (min-width: 1024px) {
+  #third_section {
+    padding: 70px;
   }
 }
 
