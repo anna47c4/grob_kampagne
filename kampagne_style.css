@@ -20,8 +20,9 @@ header nav ul {
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
-  gap: 40px;
+  gap: 30px;
   border: none;
+  padding-left: 20px;
 }
 
 nav img {
