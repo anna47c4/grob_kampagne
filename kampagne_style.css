@@ -143,7 +143,8 @@ p {
 #first_section,
 #second_section,
 #third_section,
-#fourth_section {
+#fourth_section,
+#fifth_section {
   padding: 10px;
   margin: 10px;
 }
@@ -162,7 +163,7 @@ p {
   }
 
   .col1 {
-    padding-top: 32px;
+    padding-top: 150px;
   }
 }
 
@@ -183,7 +184,7 @@ p {
   .col1 {
     margin-right: 42px;
     padding-right: 42px;
-    padding-top: 27px;
+    padding-top: 35px;
   }
 }
 
@@ -199,7 +200,7 @@ p {
 
 @media (min-width: 1024px) {
   #third_section {
-    padding: 70px;
+    padding: 135px;
   }
 }
 
@@ -237,8 +238,23 @@ p {
   }
 }
 
+/* fifth_section på tablet  */
+@media (min-width: 768px) {
+  #fifth_section {
+    padding: 50px;
+  }
+}
+
+/* fifth_section på compuer  */
+@media (min-width: 1024px) {
+  #fifth_section {
+    padding: 135px;
+  }
+}
+
 /* ---------- Footer :) ---------- */
 footer {
+  max-width: 1800px;
   margin: 0;
   padding: 30px 60px 10px 60px;
   gap: 50px;
